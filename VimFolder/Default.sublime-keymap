@@ -1,0 +1,13 @@
+[
+	// Insert Vim remarker using default remarker text
+	{ "keys": ["f6"],                "command": "insert_vim_folding_marker" },
+	// Insert Vim remarker using the specified remarker
+	{ "keys": ["ctrl+f12", "ctrl+0"], "command": "insert_vim_folding_marker", "args": {"remarker": "##"} },
+	{ "keys": ["ctrl+f12", "ctrl+9"], "command": "insert_vim_folding_marker", "args": {"remarker": "//"} },
+	{ "keys": ["ctrl+f12", "ctrl+8"], "command": "insert_vim_folding_marker", "args": {"remarker": "--"} },
+	{ "keys": ["ctrl+f12", "ctrl+7"], "command": "insert_vim_folding_marker", "args": {"remarker": "XX"} },
+	// { "keys": ["ctrl+f6", "ctrl+4"], "command": "insert_date", "args": {"remarker": "%x %X %Z", "tz_out": "UTC"} },
+	// Prompt for user input, "remarker" would behave as default text
+	// and insert the Vim remarker using that remarker string
+	{ "keys": ["alt+f12","alt+0"],            "command": "insert_vim_folding_marker", "args": {"remarker": "##", "prompt": true} }
+]
